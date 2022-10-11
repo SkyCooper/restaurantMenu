@@ -1,5 +1,5 @@
 import React from 'react'
-import Icons from "./components/header/Header"
+import Icons from "./components/icons/Icons"
 import Card from "./components/cards/Card"
 import Gdata from "./components/helper/data"
 
@@ -31,7 +31,7 @@ function App() {
   console.log(collection);
   console.log(data);
   const categ_filter = (itemData) => {
-    const filterData = Gdata.filter((item) => item.category == itemData);
+    const filterData = Gdata.filter((item) => item.category === itemData);
     setData(filterData);
   };
 
